@@ -1,0 +1,63 @@
+@use "../../../app/scss/variables.scss" as variables;
+
+#headerSection {
+    h1 {
+        color: variables.$yellowColor;
+        position: absolute;
+        left: 50%;
+        top: 29%;
+        transform: translate(-50%, -50%);
+        -o-transform: translate(-50%, -50%);
+        -moz-transform: translate(-50%, -50%);
+        -webkit-transform: translate(-50%, -50%);
+    }
+
+    img {
+        height: 400px;
+        width: 100%;
+    }
+}
+
+#whoWeAreSection {
+    padding: 60px 0px;
+
+    header {
+        h2 {
+            color: variables.$blueColor;
+            text-align: center;
+            padding-bottom: 60px;
+        }
+    }
+}
+
+#foundersSection {
+    padding: 60px 0px;
+    background-color: variables.$darkBackgorundColor;
+
+    h2 {
+        color: variables.$yellowColor;
+        text-align: center;
+        padding-bottom: 60px;
+    }
+
+    img {
+        height: 450px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    p {
+        color: variables.$textWithDarkBackgroundColor;
+    }
+}
+
+#whyIronKidzGymSection {
+    padding: 60px 0px;
+
+    h2 {
+        color: variables.$blueColor;
+        text-align: center;
+        padding-bottom: 60px;
+    }
+}

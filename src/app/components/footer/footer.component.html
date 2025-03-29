@@ -1,0 +1,30 @@
+<footer class="footer-section set-bg">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="footer-content">
+                    <div class="footer-logo">
+                        <a href="#"><img src="images/logo.png" alt=""></a>
+                    </div>
+                    <div class="footer-menu">
+                        <ul>
+                            <li><a (click)="scrollTop()" routerLink="./default" routerLinkActive="isActive">Home</a></li>
+                            <li><a (click)="scrollTop()" routerLink="./about-us" routerLinkActive="isActive">About us</a></li>
+                            <li><a (click)="scrollTop()" routerLink="./locations" routerLinkActive="isActive">Locations</a></li>
+                            <li><a (click)="scrollTop()" routerLink="./parties" routerLinkActive="isActive">Parties</a></li>
+                            <li><a (click)="scrollTop()" routerLink="./camp" routerLinkActive="isActive">Camp</a></li>
+                        </ul>
+                    </div>
+                    <div class="social-links">
+                        <a target="_blank" href="https://www.facebook.com/IRON_KIDZ"><fa-icon
+                                [icon]="faFacebookF"></fa-icon></a>
+                        <a target="_blank" href="https://instagram.com/IRON_KIDZ/"><fa-icon
+                                [icon]="faInstagram"></fa-icon></a>
+                        <a target="_blank" href="#"><fa-icon [icon]="faYoutube"></fa-icon></a>
+                        <a target="_blank" href="#"><fa-icon [icon]="faTiktok"></fa-icon></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>

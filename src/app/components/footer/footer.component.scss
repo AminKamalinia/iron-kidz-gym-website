@@ -1,0 +1,136 @@
+.footer-section {
+    height: 641px;
+    padding-top: 109px;
+}
+
+.footer-content {
+    text-align: center;
+}
+
+.footer-content .footer-logo {
+    margin-bottom: 33px;
+}
+
+.footer-content .footer-menu {
+    margin-bottom: 86px;
+}
+
+.footer-content .footer-menu ul li {
+    list-style: none;
+    display: inline-block;
+    margin-right: 37px;
+}
+
+.footer-content .footer-menu ul li:last-child {
+    margin-right: 0;
+}
+
+.footer-content .footer-menu ul li:nth-child(2) {
+    margin-right: 22px;
+}
+
+.footer-content .footer-menu ul li a {
+    color: #fff;
+    display: inline-block;
+    font-size: 13px;
+    text-transform: uppercase;
+    padding: 4px;
+}
+
+.footer-content .subscribe-form {
+    display: inline-block;
+    margin-bottom: 52px;
+    width: 542px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.footer-content .subscribe-form input {
+    color: #fff;
+    height: 73px;
+    width: 100%;
+    background: transparent;
+    border: 2px solid #fff;
+    font-size: 13px;
+    font-style: italic;
+    padding-left: 28px;
+    display: inline-block;
+}
+
+.footer-content .subscribe-form input::-webkit-input-placeholder {
+    color: #fff;
+    opacity: 0.6;
+    text-transform: uppercase;
+}
+
+.footer-content .subscribe-form input:-ms-input-placeholder {
+    color: #fff;
+    opacity: 0.6;
+    text-transform: uppercase;
+}
+
+.footer-content .subscribe-form input::-ms-input-placeholder {
+    color: #fff;
+    opacity: 0.6;
+    text-transform: uppercase;
+}
+
+.footer-content .subscribe-form input::placeholder {
+    color: #fff;
+    opacity: 0.6;
+    text-transform: uppercase;
+}
+
+.footer-content .subscribe-form button {
+    color: #fff;
+    background: #233EDE;
+    border: 1px solid #233EDE;
+    font-size: 14px;
+    text-transform: uppercase;
+    height: 100%;
+    width: 192px;
+    cursor: pointer;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+
+.footer-content .social-links {
+    margin-bottom: 45px;
+    margin-top: 52px;
+}
+
+.footer-content .social-links a {
+    color: #fff;
+    display: inline-block;
+    margin-right: 60px;
+    padding: 2px;
+}
+
+.footer-content .social-links a:last-child {
+    margin-right: 0;
+}
+
+.footer-content .footer-icon-img {
+    margin-bottom: 32px;
+}
+
+.footer-content .copyright {
+    color: #fff;
+    font-size: 13px;
+    font-weight: 400;
+    opacity: 0.5;
+}
+
+.footer-content .copyright a {
+    color: #fff;
+    text-decoration: underline;
+}
+
+.footer-content .copyright i {
+    color: #233EDE;
+}
+
+.set-bg {
+    background-image: url('../../../../public/images/footer-bg.jpg');
+}

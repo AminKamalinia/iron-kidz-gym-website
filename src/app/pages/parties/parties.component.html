@@ -1,0 +1,60 @@
+<section id="headerSection">
+    <h1 class="text-center">Parties</h1>
+    <img src="images/bg.jpg" class="img-fluid" alt="...">
+</section>
+<article id="whatArePartiesSection">
+    <section class="container">
+        <div class="row justify-content-center">
+            <header class="col-md-12">
+                <h2>What Are Parties?</h2>
+            </header>
+            <section class="col-md-5">
+                <pre>
+IRONKIDZ parties are the ULTIMATE celebration experience!
+Get ready for 90 minutes of high-energy fun, led by not one, but TWO expert coaches!
+What to expect:
+	• Exciting activities guided by our IRONKIDZ coaches
+	• Stress-free setup and cleanup—we've got it covered!
+	• Private access to the entire facility for your celebration
+	• Perfect for kids ages 2 to 12
+Host your party at IRONKIDZ, enjoy your treats, and leave the cleanup to us!
+Give your child an unforgettable celebration. Book now and get ready for an action-packed party!
+Once your party is booked, we'll check in a week before to confirm your final headcount.
+For any questions, feel free to reach out to your location!
+                </pre>
+            </section>
+            <aside class="col-md-5">
+                <img src="images/bg.jpg" class="img-fluid" alt="..." />
+            </aside>
+        </div>
+    </section>
+</article>
+<section id="faqSection">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h2 id="faqHeader">
+                    Frequently Asked Questions
+                </h2>
+            </div>
+            <div class="accordion" id="accordionExample">
+                @for (item of faqResults; track item.id) {
+                <div class="accordion-item">
+                    <h2 class="accordion-header" attr.id="heading{{item.id}}">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                            attr.data-bs-target="#collapse{{item.id}}" attr.aria-controls="collapse{{item.id}}">
+                            {{item.question}}
+                        </button>
+                    </h2>
+                    <div attr.id="collapse{{item.id}}" class="accordion-collapse collapse"
+                        attr.aria-labelledby="heading{{item.id}}" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            {{item.answer}}
+                        </div>
+                    </div>
+                </div>
+                }
+            </div>
+        </div>
+    </div>
+</section>

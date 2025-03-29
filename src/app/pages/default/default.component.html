@@ -1,0 +1,107 @@
+<section id="carouselExample" class="carousel slide">
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+            <img src="images/bg.jpg" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+            <img src="images/bg-2.jpg" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+            <img src="images/bg-3.jpg" class="d-block w-100" alt="...">
+        </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+    </button>
+</section>
+<app-location></app-location>
+<section id="ourGoal">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h2>
+                    Our Goal
+                </h2>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="images/feature-1.jpg" class="card-img-top" alt="strength">
+                    <div class="featureIconDiv">
+                        <img src="images/strength2.png" alt="strength">
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Strength training</h5>
+                        <p class="card-text"><strong>I AM IRON</strong> represents resilience, determination, and
+                            strength. At IRONKIDZ, we believe every child has the potential to grow stronger—not just
+                            physically but also mentally and emotionally. Through fun, structured activities, we help
+                            kids build confidence and endurance to tackle any challenge.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="images/feature-2.jpg" class="card-img-top" alt="Mindset training">
+                    <div class="featureIconDiv">
+                        <img src="images/brain1.png" alt="Mindset training">
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Mindset training</h5>
+                        <p class="card-text"><strong>I AM POWERFUL</strong> embodies the belief that every child is
+                            capable of greatness.
+                            Our program fosters self-belief, leadership skills, and physical strength, empowering kids
+                            to push past their limits and discover their inner power.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="images/feature-3.jpg" class="card-img-top" alt="Character building">
+                    <div class="featureIconDiv">
+                        <img src="images/character1.png" alt="Character building">
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Character building</h5>
+                        <p class="card-text"><strong>I CAN DO THIS</strong> is the mindset we instill in every child who
+                            walks through our doors.
+                            Whether they're mastering a new skills move or overcoming personal challenges, we encourage
+                            kids to develop perseverance, problem-solving skills, and a “never give up” attitude.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section id="faq">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h2 id="faqHeader">
+                    Frequently Asked Questions
+                </h2>
+            </div>
+            <div class="accordion" id="accordionExample">
+                @for (item of faqResults; track item.id) {
+                <div class="accordion-item">
+                    <h2 class="accordion-header" attr.id="heading{{item.id}}">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                            attr.data-bs-target="#collapse{{item.id}}" attr.aria-controls="collapse{{item.id}}">
+                            {{item.question}}
+                        </button>
+                    </h2>
+                    <div attr.id="collapse{{item.id}}" class="accordion-collapse collapse"
+                        attr.aria-labelledby="heading{{item.id}}" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            {{item.answer}}
+                        </div>
+                    </div>
+                </div>
+                }
+            </div>
+        </div>
+    </div>
+</section>

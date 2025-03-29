@@ -1,0 +1,54 @@
+@use "../../../app/scss/variables.scss" as variables;
+
+#headerSection {
+    h1 {
+        color: variables.$yellowColor;
+        position: absolute;
+        left: 50%;
+        top: 29%;
+        transform: translate(-50%, -50%);
+        -o-transform: translate(-50%, -50%);
+        -moz-transform: translate(-50%, -50%);
+        -webkit-transform: translate(-50%, -50%);
+    }
+
+    img {
+        height: 400px;
+        width: 100%;
+    }
+}
+
+#whatArePartiesSection {
+    padding: 60px 0px;
+
+    header {
+        h2 {
+            color: variables.$blueColor;
+            text-align: center;
+            padding-bottom: 60px;
+        }
+    }
+
+    pre {
+        white-space: pre-wrap;
+        font-size: 15px;
+        font-weight: 400;
+        line-height: 1.6;
+        margin: 0 0 15px 0;
+        text-align: justify;
+        word-break: break-word;
+        font-family: "Roboto", sans-serif;
+    }
+}
+
+#faqSection {
+    padding: 60px 0px;
+    background-color: variables.$blueColor;
+    color: variables.$whiteColor;
+
+    #faqHeader {
+        color: variables.$yellowColor;
+        text-align: center;
+        padding-bottom: 60px;
+    }
+}

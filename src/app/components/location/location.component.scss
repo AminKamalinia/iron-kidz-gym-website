@@ -1,0 +1,30 @@
+@use "../../../app/scss/variables.scss" as variables;
+
+#locationSection {
+    padding: 60px 0px;
+
+    h2 {
+        color: variables.$blueColor;
+        text-align: center;
+        padding-bottom: 60px;
+    }
+
+    h4 {
+        margin-bottom: 10px;
+    }
+
+    iframe {
+        width: 100%;
+        height: 403px;
+    }
+
+    a {
+        &:hover {
+            color: variables.$yellowColor;
+        }
+    }
+
+    fa-icon {
+        margin-right: 5px;
+    }
+}
